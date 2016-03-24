@@ -1,9 +1,3 @@
-/**
- * This is the entry point for your experience that you will run on Exponent.
- *
- * Start by looking at the render() method of the component called
- * FirstExperience. This is where the text and example components are.
- */
 'use strict';
 
 let React = require('react-native');
@@ -13,7 +7,7 @@ let {
   View,
 } = React;
 
-class FirstExperience extends React.Component {
+class App extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
@@ -36,4 +30,4 @@ class FirstExperience extends React.Component {
   }
 }
 
-AppRegistry.registerComponent('main', () => FirstExperience);
+AppRegistry.registerComponent('main', () => App);
